@@ -408,7 +408,7 @@ module.exports = function (webpackEnv) {
                 presets: [require.resolve('babel-preset-react-app')],
                 
                 // self-define plugins
-                plugins: [require.resolve('plugin-proposal-pipeline-operator')],
+                // plugins: [require.resolve('@babel/plugin-proposal-pipeline-operator')],
 
                 // Make sure we have a unique cache identifier, erring on the
                 // side of caution.
@@ -428,6 +428,7 @@ module.exports = function (webpackEnv) {
                 ),
                 // @remove-on-eject-end
                 plugins: [
+                  [require.resolve("@babel/plugin-proposal-pipeline-operator"), { proposal: "minimal" }],
                   [
                     require.resolve('babel-plugin-named-asset-import'),
                     {
