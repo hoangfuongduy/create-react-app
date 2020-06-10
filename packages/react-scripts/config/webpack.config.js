@@ -406,6 +406,10 @@ module.exports = function (webpackEnv) {
                 babelrc: false,
                 configFile: false,
                 presets: [require.resolve('babel-preset-react-app')],
+                
+                // self-define plugins
+                plugins: [require.resolve('plugin-proposal-pipeline-operator')],
+
                 // Make sure we have a unique cache identifier, erring on the
                 // side of caution.
                 // We remove this when the user ejects because the default

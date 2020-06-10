@@ -1,10 +1,10 @@
 {
-  "name": "react-scripts",
-  "version": "3.4.1",
+  "name": "@hoangfuongduy/react-scripts",
+  "version": "1.1.0",
   "description": "Configuration and scripts for Create React App.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/facebook/create-react-app.git",
+    "url": "https://github.com/hoangfuongduy/create-react-app.git",
     "directory": "packages/react-scripts"
   },
   "license": "MIT",
@@ -12,7 +12,7 @@
     "node": ">=10"
   },
   "bugs": {
-    "url": "https://github.com/facebook/create-react-app/issues"
+    "url": "https://github.com/hoangfuongduy/create-react-app/issues"
   },
   "files": [
     "bin",
@@ -29,6 +29,7 @@
   "types": "./lib/react-app.d.ts",
   "dependencies": {
     "@babel/core": "7.10.2",
+    "@babel/plugin-proposal-pipeline-operator": "^7.10.1",
     "@pmmmwh/react-refresh-webpack-plugin": "0.3.3",
     "@svgr/webpack": "5.4.0",
     "@typescript-eslint/eslint-plugin": "^2.10.0",
